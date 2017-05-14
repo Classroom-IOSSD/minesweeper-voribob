@@ -15,9 +15,6 @@ $(TARGET): $(OBJS)
 	$(CC) $(OUTPUT_OPTION) $(CFLAGS) $^
 
 
-tar:
-	tar -czvf $(TARGET).gz $(SRCS) conio.h Makefile
-
 .PHONY: clean
 clean:
 	$(RM) $(OBJS) $(DEP) $(TARGET)
