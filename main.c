@@ -10,7 +10,6 @@
 #include "console_gui.h"
 
 int main(int argc, char *argv[]) {
-//    run_states();
     start_menu();
 
     return 0;

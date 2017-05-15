@@ -77,20 +77,8 @@ static inline bool is_within_bound(size_t column, size_t row) {
 }
 
 void set_cell(size_t column, size_t row, unsigned int value) {
-//    if(!is_within_bound(column, row))
-//        return false;
-
     grid_table[row][column] = value;
-//    return true;
 }
-
-
-//bool get_cell(size_t column, size_t row, unsigned int *value) {
-//    if(!is_within_bound(column, row))
-//        return false;
-//    *value = grid_table[row][column];
-//    return true;
-//}
 
 unsigned int get_cell(size_t column, size_t row) {
     return grid_table[row][column];
